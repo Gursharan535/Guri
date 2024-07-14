@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/cards.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #36768c;
+            font-family: cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .cards {
+            width: 380px;
+            height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 8px ridge rgb(255, 255, 255);
+            position: relative;
+        }
+
+        .card-body {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -100%;
+            position: absolute;
+            background: #1f3d4738;
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            color: white;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: 2s;
+        }
+
+        .cards:hover .card-body {
+            right: 0%;
+        }
+
+        .card-title {
+            text-transform: uppercase;
+            font-size: 50px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .card-sub-title {
+            text-transform: capitalize;
+            font-size: 40px;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .card-info {
+            font-size: 16px;
+            line-height: 25px;
+            margin: 20px 0;
+            font-weight: 400;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .card-btn {
+            color: #1f3d47;
+            background: #8fabba;
+            padding: 10px 20px;
+            width: 120px;
+            border-radius: 5px;
+            text-transform: capitalize;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1076.0" data-gr-ext-installed="">
+    <div class="cards">
+        <img src="./Hover Effect_files/images" alt="">
+        <div class="card-body">
+            <h1 class="card-title">NYC</h1>
+            <p class="card-sub-title">NEW YORK CITY</p>
+            <p class="card-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate porro quasi cum
+                neque vitae nostrum sunt quis ea, tempore, ipsa vel repellat repellendus rem quia?</p>
+            <center> <button class="card-btn">BOOK TOUR</button></center>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
